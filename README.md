@@ -14,6 +14,9 @@ Node.js, Composer, Symfony cli, etc. on your host machine.
 - On macOS, install Orb Stack instead of official Docker Desktop: https://orbstack.dev/ 
   This will enhance performance on shared volumes.
 - Make sure your IDE is configured to use **LF** file endings. This can break Docker Build if you use **CRLF**.
+  If you use VS Code : 
+    - Open settings ()`CMD`/ `CTRL`+ `,`)
+    - Search for `eol` and select `\n` to set up LF as default
 - Create a .env file based on .env.sample and adjust it to fit your needs.
     - cp .env.sample .env
     - vim .env
