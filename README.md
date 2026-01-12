@@ -1,6 +1,7 @@
-# docker_dev-env_php-fpm_sf-cli
+# on-me.fr
 
-A simple docker compose container with Nginx, PHP 8.4 (cli + fpm), Node.js 22.x, Mariadb 11, PhpMyAdmin, Symfony cli
+A docker compose container with Nginx, PHP 8.4 (cli + fpm), Node.js 22.x, Mariadb 11, PhpMyAdmin, Symfony cli.\
+Designed for Symfony 7.3 projects hosted on an Infomaniak infrastructure.
 
 ## How to use 
 
@@ -11,7 +12,7 @@ If you run every command inside your container (`docker compose run --rm cli`), 
 Node.js, Composer, Symfony cli, etc. on your host machine.
 
 - Clone this repository: `git clone https://github.com/Gr3G-RST/docker_dev-env_php-fpm_sf-cli.git my_project`
-- On macOS, install Orb Stack instead of official Docker Desktop: https://orbstack.dev/ 
+- On macOS, install Orb Stack instead of official Docker Desktop: https://orbstack.dev/ \
   This will enhance performance on shared volumes.
 - Make sure your IDE is configured to use **LF** file endings. This can break Docker Build if you use **CRLF**.
   If you use VS Code : 
@@ -26,10 +27,10 @@ Node.js, Composer, Symfony cli, etc. on your host machine.
 - Launch the project with `docker compose up -d`
 - Stop the project with `docker compose down`
 
-## Setting up a Symfony 7.2 project
+## Setting up a Symfony 7.3 project
 
-- Execute `docker compose run --rm --no-deps cli symfony new --no-git --webapp --version=7.2 project` to create a new Symfony project 
-  but do not initialize a git repository which will be done later.
+- Execute `docker compose run --rm --no-deps cli symfony new --no-git --webapp --version=7.3 project` to create a new Symfony project \
+  Do not initialize a git repository which will be done later.
 - Launch the project with `docker compose up -d`
 
 ## Remove this starter git repository
