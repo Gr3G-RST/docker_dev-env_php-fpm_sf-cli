@@ -1,4 +1,4 @@
-# on-me.fr
+# DOTG Docker server Nginx dev. env. with PHP FPM / Symfony Client / MariaDB
 
 A docker compose container with Nginx, PHP 8.4 (cli + fpm), Node.js 22.x, Mariadb 11, PhpMyAdmin, Symfony cli.\
 Designed for Symfony 7.3 projects hosted on an Infomaniak infrastructure.
